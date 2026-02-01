@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Signup from "./pages/signup";
+import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
 import ForgotPassword from "./pages/ForgotPassword";
 import { Toaster } from "react-hot-toast";
