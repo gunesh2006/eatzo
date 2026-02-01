@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { serverUrl } from "../App";
 import axios from "axios";
-import DeliveryBoyTracking from "../components/deliveryBoyTracking";
+import DeliveryBoyTracking from "../components/DeliveryBoyTracking";
 import { useSelector } from "react-redux";
 const TrackOrderPage = () => {
   const { orderId } = useParams();
