@@ -160,7 +160,7 @@ const CheckOutPage = () => {
                   position={[location?.lat, location?.lon]}
                   icon={new L.Icon({
     iconUrl: "/marker.png",       // directly from public folder
-    iconSize: [25, 41],           // adjust size to your image
+    iconSize: [30, 41],           
     iconAnchor: [12, 41],         // point of the icon that corresponds to marker location
     popupAnchor: [1, -34],        // point from which popups open
     
