@@ -26,7 +26,7 @@ import TrackOrderPage from "./pages/TrackOrderPage";
 import Shop from "./pages/Shop";
 import AllProducts from "./pages/AllProducts";
 import { io } from "socket.io-client";
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = "https://eatzo-backend.onrender.com";
 const App = () => {
   useGetCurrentUser();
   useGetMyShop();
