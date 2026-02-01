@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setUserData } from "../redux/userSlice";
 import { serverUrl } from "../App";
-import DeliveryBoyTracking from "./deliveryBoyTracking";
+import DeliveryBoyTracking from "./DeliveryBoyTracking";
 
 const DeliveryBoyDashboard = () => {
   const [showInfo, setShowInfo] = useState(false);
