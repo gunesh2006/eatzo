@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 import { addMyOrder } from "../redux/userSlice";
 import { PayPalButtons } from "@paypal/react-paypal-js";
 import L from "leaflet";
-import "leaflet/dist/leaflet.css";
+
 
 // Fix default icon paths
 delete L.Icon.Default.prototype._getIconUrl;
@@ -165,6 +165,13 @@ const CheckOutPage = () => {
                 <RecenterMap location={location} />
                 <Marker
                   position={[location?.lat, location?.lon]}
+                  icon={new L.Icon({
+    iconUrl: "/marker.png",       // directly from public folder
+    iconSize: [25, 41],           // adjust size to your image
+    iconAnchor: [12, 41],         // point of the icon that corresponds to marker location
+    popupAnchor: [1, -34],        // point from which popups open
+    
+  })}
                   draggable
                   eventHandlers={{ dragend: onDragEnd }}
                 ></Marker>
